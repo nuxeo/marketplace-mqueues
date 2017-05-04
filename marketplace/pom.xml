@@ -29,7 +29,6 @@
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-mqueues-importer</artifactId>
-      <version>9.1-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
