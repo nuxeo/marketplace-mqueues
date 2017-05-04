@@ -4,7 +4,6 @@
     <groupId>org.nuxeo.ecm.distribution</groupId>
     <artifactId>nuxeo-distribution</artifactId>
     <version>9.1-SNAPSHOT</version>
-    <relativePath></relativePath>
   </parent>
 
   <groupId>org.nuxeo.marketplace.mqueues.importer</groupId>
@@ -64,5 +63,11 @@
       </snapshots>
     </repository>
   </repositories>
+
+  <scm>
+    <connection>scm:git:git://github.com/nuxeo/marketplace-mqueues.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:nuxeo/marketplace-mqueues.git</developerConnection>
+    <url>https://github.com/nuxeo/marketplace-mqueues</url>
+  </scm>
 
 </project>
