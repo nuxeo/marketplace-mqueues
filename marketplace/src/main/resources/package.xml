@@ -2,9 +2,9 @@
 <package type="addon" name="nuxeo-mqueues" version="@VERSION@">
   <title>Nuxeo MQueues importer</title>
   <description>
-    <p>MQueues can be used to setup producer/consumer pattern.</p>
-    <p>It comes with random document generators and consumers.</p>
-    <p>This package also set a new experimental WorkManager based on computations.</p>
+    <p>MQueues provides producer/consumer and computation patterns.</p>
+    <p>Producer/consumer pattern is used to impl efficient document importer.</p>
+    <p>Computation pattern is used to impl an experimental WorkManager.</p>
   </description>
   <home-page></home-page>
   <vendor>Nuxeo</vendor>
@@ -19,7 +19,7 @@
     <platform>server-@DISTRIB_VERSION@</platform>
     <platform>server-@DISTRIB_VERSION@-*</platform>
   </platforms>
-  <license>LGPL</license>
-  <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
+  <license>Apache 2.0</license>
+  <license-url>http://www.apache.org/licenses/LICENSE-2.0</license-url>
   <visibility>DEV</visibility>
 </package>
