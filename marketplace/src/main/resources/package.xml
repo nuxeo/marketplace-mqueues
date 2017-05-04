@@ -1,26 +1,25 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
-<package type="addon" name="nuxeo-platform-importer" version="@VERSION@">
-  <title>MQueues document importer</title>
+<package type="addon" name="nuxeo-mqueues" version="@VERSION@">
+  <title>Nuxeo MQueues importer</title>
   <description>
-    <p></p>
+    <p>MQueues can be used to setup producer/consumer pattern.</p>
+    <p>It comes with random document generators and consumers.</p>
+    <p>This package also set a new experimental WorkManager based on computations.</p>
   </description>
   <home-page></home-page>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
   <!-- <hotreload-support>false</hotreload-support> -->
-  <require-terms-and-conditions-acceptance>true</require-terms-and-conditions-acceptance>
+  <require-terms-and-conditions-acceptance>false</require-terms-and-conditions-acceptance>
   <nuxeo-validation>nuxeo_certified</nuxeo-validation>
-  <production-state>production_ready</production-state>
-  <supported>true</supported>
+  <production-state>proto</production-state>
+  <supported>false</supported>
   <platforms>
     <platform>server-@DISTRIB_VERSION@</platform>
     <platform>server-@DISTRIB_VERSION@-*</platform>
   </platforms>
-  <conflicts>
-    <package>nuxeo-scan-importer</package>
-  </conflicts>
   <license>LGPL</license>
   <license-url>http://www.gnu.org/licenses/lgpl-2.1.html</license-url>
-  <visibility>MARKETPLACE</visibility>
+  <visibility>DEV</visibility>
 </package>
