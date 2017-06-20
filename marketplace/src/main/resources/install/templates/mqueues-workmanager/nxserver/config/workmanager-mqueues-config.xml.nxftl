@@ -5,10 +5,10 @@
   <service>
     <provide interface="org.nuxeo.ecm.core.work.api.WorkManager" />
   </service>
-<#if "${kafka.zkServers}" == "">
-  <implementation class="org.nuxeo.ecm.platform.importer.mqueues.workmanager.WorkManagerComputationChronicle" />
-<#else>
+<#if (kafka.zkServers)??>
   <implementation class="org.nuxeo.ecm.platform.importer.mqueues.workmanager.WorkManagerComputationKafka" />
+<#else>
+  <implementation class="org.nuxeo.ecm.platform.importer.mqueues.workmanager.WorkManagerComputationChronicle" />
 </#if>
   <extension-point name="queues">
     <object class="org.nuxeo.ecm.core.work.api.WorkQueueDescriptor" />
