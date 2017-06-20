@@ -9,23 +9,17 @@
 
   <artifactId>marketplace-mqueues</artifactId>
   <packaging>zip</packaging>
-  <name>Nuxeo MQueues Marketplace Package</name>
+  <name>Nuxeo MQueues Package</name>
 
   <dependencies>
     <!-- Base distribution(s) for the MP -->
-    <dependency>
-      <groupId>org.nuxeo.ecm.distribution</groupId>
-      <artifactId>nuxeo-nxr-server</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
+   <dependency>
       <groupId>org.nuxeo.ecm.distribution</groupId>
       <artifactId>nuxeo-nxr-server</artifactId>
       <type>zip</type>
       <scope>provided</scope>
     </dependency>
 
-    <!-- Importer -->
     <dependency>
       <groupId>org.nuxeo.ecm.platform</groupId>
       <artifactId>nuxeo-mqueues-importer</artifactId>

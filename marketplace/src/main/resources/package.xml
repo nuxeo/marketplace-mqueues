@@ -2,11 +2,10 @@
 <package type="addon" name="nuxeo-mqueues" version="@VERSION@">
   <title>Nuxeo MQueues importer</title>
   <description>
-    <p>MQueues provides producer/consumer and computation patterns.</p>
-    <p>Producer/consumer pattern is used to impl efficient document importer.</p>
-    <p>Computation pattern is used to impl an experimental WorkManager.</p>
+    <p>Asynchronous message passing system abstraction on top of Kafka or Chronicle Queue</p>
+    <p>Provides a mass importer and an alternative Workmanager implementation</p>
   </description>
-  <home-page></home-page>
+  <home-page>https://github.com/nuxeo/nuxeo-mqueues</home-page>
   <vendor>Nuxeo</vendor>
   <installer restart="true" />
   <uninstaller restart="true" />
@@ -21,5 +20,5 @@
   </platforms>
   <license>Apache 2.0</license>
   <license-url>http://www.apache.org/licenses/LICENSE-2.0</license-url>
-  <visibility>DEV</visibility>
+  <visibility>PUBLIC</visibility>
 </package>
