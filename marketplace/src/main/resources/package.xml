@@ -1,6 +1,6 @@
 <!-- See documentation at http://doc.nuxeo.com/x/HgIz -->
 <package type="addon" name="nuxeo-mqueues" version="@VERSION@">
-  <title>Nuxeo MQueues importer</title>
+  <title>Nuxeo MQueues</title>
   <description>
     <p>Asynchronous message passing system abstraction on top of Kafka or Chronicle Queue</p>
     <p>Provides a mass importer and an alternative Workmanager implementation</p>
