@@ -1,2 +1,3 @@
 mqueues.target=.
 
+nuxeo.mqueue.chronicle.retention.duration=4d

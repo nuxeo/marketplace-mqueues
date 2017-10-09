@@ -1,6 +1,6 @@
 mqueues-workmanager.target=.
 
-#nuxeo.mqueue.chronicle.dir
-nuxeo.mqueue.chronicle.retention.duration=4d
-
-nuxeo.mqueue.work.kafka.config=default
+# the mqueue configuration to use
+nuxeo.mqueue.work.config=work
+# over provisioning when using Kafka
+nuxeo.mqueue.work.over.provisioning=3

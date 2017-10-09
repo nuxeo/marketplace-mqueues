@@ -4,8 +4,6 @@
 
   <extension target="org.nuxeo.ecm.platform.mqueues.service" point="config">
 
-    <config name="audit" type="chronicle" />
-
 <#if (kafka.zkServers)??>
     <config name="default" type="kafka">
       <option name="config">default</option>
@@ -13,13 +11,29 @@
     <config name="work" type="kafka">
       <option name="config">default</option>
     </config>
+    <config name="audit" type="kafka">
+      <option name="config">default</option>
+    </config>
     <config name="import" type="kafka">
       <option name="config">default</option>
     </config>
 <#else>
-    <config name="default" type="chronicle" />
-    <config name="work" type="chronicle" />
-    <config name="import" type="chronicle"/>
+    <config name="default" type="chronicle">
+      <option name="retention">${nuxeo.mqueue.chronicle.retention.duration}</option>
+    </config>
+    <config name="audit" type="chronicle">
+      <option name="retention">${nuxeo.mqueue.chronicle.retention.duration}</option>
+    </config>
+    <config name="work" type="chronicle">
+      <option name="retention">${nuxeo.mqueue.chronicle.retention.duration}</option>
+    </config>
+    <config name="import" type="chronicle">
+      <option name="retention">${nuxeo.mqueue.chronicle.retention.duration}</option>
+      <!--
+      <option name="directory">import2</option>
+      <option name="basePath">/tmp</option>
+      -->
+    </config>
 </#if>
 
   </extension>
