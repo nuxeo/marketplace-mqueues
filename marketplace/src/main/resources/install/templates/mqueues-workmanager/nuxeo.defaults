@@ -1,6 +1,0 @@
-mqueues-workmanager.target=.
-
-# the mqueue configuration to use
-nuxeo.mqueue.work.config=work
-# over provisioning when using Kafka
-nuxeo.mqueue.work.over.provisioning=3
